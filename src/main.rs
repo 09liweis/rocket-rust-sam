@@ -8,7 +8,7 @@ mod tests;
 
 #[get("/")]
 fn hello() -> &'static str {
-    "Hello, Sam!"
+    "Hello, Sam Web rust rocket!"
 }
 
 fn main() {
