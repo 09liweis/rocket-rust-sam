@@ -12,5 +12,6 @@ fn hello() -> &'static str {
 }
 
 fn main() {
+    println!("Hello, world!");
     rocket::ignite().mount("/", routes![hello]).launch();
 }
