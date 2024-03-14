@@ -7,11 +7,11 @@ extern crate rocket;
 mod tests;
 
 #[get("/")]
-fn hello() -> &'static str {
-    "Hello, Sam Web rust rocket!"
+fn index() -> &'static str {
+    "Hello, Sam rust rocket!"
 }
 
 fn main() {
     println!("Hello, world!");
-    rocket::ignite().mount("/", routes![hello]).launch();
+    rocket::ignite().mount("/", routes![index]).launch();
 }
