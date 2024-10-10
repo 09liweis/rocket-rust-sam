@@ -12,6 +12,6 @@ fn index() -> &'static str {
 }
 
 fn main() {
-    println!("Hello, world!");
+    println!("Hello, Test!");
     rocket::ignite().mount("/", routes![index]).launch();
 }
