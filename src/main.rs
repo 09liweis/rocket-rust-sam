@@ -8,10 +8,10 @@ mod tests;
 
 #[get("/")]
 fn index() -> &'static str {
-    "Hello, Sam rust rocket!"
+  "Hello, Sam rust rocket!"
 }
 
 fn main() {
-    println!("Hello, Test!");
-    rocket::ignite().mount("/", routes![index]).launch();
+  println!("Hello, Test!");
+  rocket::ignite().mount("/", routes![index]).launch();
 }
